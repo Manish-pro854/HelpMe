@@ -37,7 +37,7 @@ const Navbar = () => {
                   to={link.path}
                   className={({ isActive }) =>
                     `transition duration-200 hover:text-yellow-500 ${
-                      isActive ? "text-yellow-500 font-semibold" : ""
+                      isActive ? "text-yellow-500 font-semibold border-0" : ""
                     }`
                   }
                 >
@@ -46,7 +46,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <FaUserCircle className="text-2xl text-gray-700 hover:text-yellow-500 transition" />
+          <NavLink to="/sign-up"><FaUserCircle className="text-2xl text-gray-700 hover:text-yellow-500 transition" /></NavLink>
         </div>
 
         {/* Mobile Toggle */}

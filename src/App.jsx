@@ -8,6 +8,7 @@ import PostJob from "./pages/PostJob";
 import FindWork from "./pages/FindWork";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/find-work" element={<FindWork />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/sign-up" element={<SignUp />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
