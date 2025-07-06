@@ -10,8 +10,8 @@ const Navbar = () => {
       </div>
         <div className="links-user hidden md:flex items-center justify-end gap-10">
           <ul className='flex items-center justify-center gap-10'>
-            <li>Find Work</li>
             <li>Post a Job</li>
+            <li>Find Work</li>
             <li>About Us</li>
             <li>Contact</li>
           </ul>
