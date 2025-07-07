@@ -11,6 +11,7 @@ import FindWork from "./pages/FindWork";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import SignUp from "./pages/SignUp";
+import CreateProfile from "./pages/CreateProfile";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/create-profile" element={<CreateProfile/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

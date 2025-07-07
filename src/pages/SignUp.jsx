@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AuthPage = () => {
   const [isSignIn, setIsSignIn] = useState(true);
+  const navigate = useNavigate();
   const toggleMode = () => setIsSignIn(!isSignIn);
 
   return (
@@ -43,7 +45,19 @@ const AuthPage = () => {
             </div>
 
             {/* Form */}
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                // Here you can add your login/signup logic
+                if (!isSignIn) {
+                  // If user just signed up
+                  navigate("/create-profile"); // redirect to create-profile
+                } else {
+                  navigate("/"); // redirect to home/dashboard
+                }
+              }}
+              className="space-y-4"
+            >
               {!isSignIn && (
                 <input
                   type="text"
