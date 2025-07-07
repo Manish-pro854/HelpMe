@@ -46,16 +46,23 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <NavLink to="/sign-up"><FaUserCircle className="text-2xl text-gray-700 hover:text-yellow-500 transition" /></NavLink>
+          <NavLink to="/sign-up">
+            <FaUserCircle className="text-2xl text-gray-700 hover:text-yellow-500 transition" />
+          </NavLink>
         </div>
 
-        {/* Mobile Toggle */}
-        <div className="md:hidden text-gray-700" onClick={toggleMobileMenu}>
-          {isMobileOpen ? (
-            <X className="text-2xl" />
-          ) : (
-            <RxHamburgerMenu className="text-2xl" />
-          )}
+        {/* Mobile Icons */}
+        <div className="md:hidden flex items-center gap-4">
+          <NavLink to="/sign-up">
+            <FaUserCircle className="text-2xl text-gray-700 hover:text-yellow-500 transition" />
+          </NavLink>
+          <div onClick={toggleMobileMenu}>
+            {isMobileOpen ? (
+              <X className="text-2xl" />
+            ) : (
+              <RxHamburgerMenu className="text-2xl" />
+            )}
+          </div>
         </div>
       </div>
 
