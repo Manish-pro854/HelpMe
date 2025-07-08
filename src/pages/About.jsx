@@ -1,6 +1,7 @@
 import React from "react";
 import teamImg from "../assets/team.jpg"; // Add a nice team image here
 import Team from "../Sections/Team";
+import { NavLink } from "react-router-dom";
 
 const About = () => {
   return (
@@ -114,12 +115,12 @@ const About = () => {
           done.
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-          <button className="bg-yellow-400 hover:bg-yellow-500 px-8 md:px-6 py-3 rounded-full text-black font-semibold transition-all duration-300">
+          <NavLink to="/find-work"><button className="bg-yellow-400 hover:bg-yellow-500 px-8 md:px-6 py-3 rounded-full text-black font-semibold transition-all duration-300 cursor-pointer">
             Find Flexible Work
-          </button>
-          <button className="bg-black hover:bg-gray-800 px-15 md:px-6 py-3 rounded-full text-white font-semibold transition-all duration-300 max-w-full">
+          </button></NavLink>
+          <NavLink to="/post-job"><button className="bg-black hover:bg-gray-800 px-15 md:px-6 py-3 rounded-full text-white font-semibold transition-all duration-300 max-w-full cursor-pointer">
             Post a Job
-          </button>
+          </button></NavLink>
         </div>
       </section>
     </div>

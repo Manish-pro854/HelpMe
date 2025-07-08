@@ -107,7 +107,7 @@ const FindWork = () => {
 
               <button
                 type="submit"
-                className="w-full bg-yellow-400 text-black font-semibold py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition-all duration-300"
+                className="w-full bg-yellow-400 text-black font-semibold py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition-all duration-300 cursor-pointer"
               >
                 Apply Filters
               </button>
@@ -141,7 +141,7 @@ const FindWork = () => {
                       {task.title}
                     </h3>
                     <p className="text-gray-700 mt-2">{task.description}</p>
-                    <button className="mt-4 flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold hover:bg-yellow-500 hover:scale-105 transition-all duration-300 text-sm">
+                    <button className="mt-4 flex items-center gap-2 bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold hover:bg-yellow-500 hover:scale-105 transition-all duration-300 text-sm cursor-pointer">
                       Apply Now <FaArrowRightLong />
                     </button>
                   </div>

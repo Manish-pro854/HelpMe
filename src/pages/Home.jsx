@@ -12,6 +12,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import WorkCard from "../Cards/WorkCard";
 import Service from "../Sections/Service";
 import FAQ from "../Sections/FAQ";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -39,12 +40,12 @@ const Home = () => {
 
     {/* Buttons */}
     <div className="mt-8 flex flex-col md:flex-row gap-4 animate-fade-in-up delay-200">
-      <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-6 rounded-full transition-all duration-300 shadow hover:scale-105">
+      <NavLink to="/find-work"><button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-6 rounded-full transition-all duration-300 shadow hover:scale-105 cursor-pointer">
         Find Flexible Work
-      </button>
-      <button className="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-6 rounded-full transition-all duration-300 shadow hover:scale-105">
+      </button></NavLink>
+      <NavLink to="/post-job"><button className="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-6 rounded-full transition-all duration-300 shadow hover:scale-105 cursor-pointer">
         Get Instant Help
-      </button>
+      </button></NavLink>
     </div>
   </div>
       </div>
@@ -120,9 +121,9 @@ const Home = () => {
                 flexible, short-term tasks posted by real people near you. Work
                 when it suits you and get paid securely after completing tasks.
               </p>
-              <button className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 hover:scale-105 transition-all duration-300 flex items-center gap-2">
+              <NavLink to="/find-work"><button className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 hover:scale-105 transition-all duration-300 flex items-center gap-2 cursor-pointer">
                 Find Flexible Work <FaArrowRightLong className="text-lg" />
-              </button>
+              </button></NavLink>
             </div>
 
             {/* Right Image Grid */}
@@ -201,9 +202,9 @@ const Home = () => {
                 trusted local workers ready to take on jobs — fast, reliable,
                 and stress-free.
               </p>
-              <button className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 hover:scale-105 transition-all duration-300 flex items-center gap-2">
+              <NavLink to="/post-job"><button className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 hover:scale-105 transition-all duration-300 flex items-center gap-2 cursor-pointer">
                 Post a Job Now <FaArrowRightLong className="text-lg" />
-              </button>
+              </button></NavLink>
             </div>
           </div>
         </div>

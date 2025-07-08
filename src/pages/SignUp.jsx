@@ -25,13 +25,13 @@ const AuthPage = () => {
             {/* Social Login */}
             {isSignIn && (
               <div className="flex gap-4 mb-6 justify-center">
-                <button className="bg-blue-600 text-white w-10 h-10 rounded-full font-bold">
+                <button className="bg-blue-600 text-white w-10 h-10 rounded-full font-bold cursor-pointer">
                   f
                 </button>
-                <button className="bg-red-500 text-white w-10 h-10 rounded-full font-bold">
+                <button className="bg-red-500 text-white w-10 h-10 rounded-full font-bold cursor-pointer">
                   G+
                 </button>
-                <button className="bg-gray-700 text-white w-10 h-10 rounded-full font-bold">
+                <button className="bg-gray-700 text-white w-10 h-10 rounded-full font-bold cursor-pointer">
                   in
                 </button>
               </div>
@@ -80,7 +80,7 @@ const AuthPage = () => {
               />
               <button
                 type="submit"
-                className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded-full"
+                className="w-full bg-yellow-400 hover:bg-yellow-500 text-black cursor-pointer font-semibold py-3 rounded-full"
               >
                 {isSignIn ? "Sign In" : "Sign Up"}
               </button>
@@ -106,7 +106,7 @@ const AuthPage = () => {
           </p>
           <button
             onClick={toggleMode}
-            className="bg-white text-gray-800 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition"
+            className="bg-white cursor-pointer text-gray-800 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition"
           >
             {isSignIn ? "Sign Up" : "Sign In"}
           </button>
@@ -152,10 +152,10 @@ const AuthPage = () => {
           Work or get help anytime, from anywhere.
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-          <button className="bg-yellow-400 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+          <button className="bg-yellow-400 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition cursor-pointer">
             Download for Android
           </button>
-          <button className="bg-black text-white px-10 py-3 rounded-full font-semibold hover:bg-gray-800 transition">
+          <button className="bg-black text-white px-10 py-3 rounded-full font-semibold hover:bg-gray-800 transition cursor-pointer">
             Download for iOS
           </button>
         </div>

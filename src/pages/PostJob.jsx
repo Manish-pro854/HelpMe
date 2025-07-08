@@ -125,7 +125,7 @@ const PostJob = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="bg-yellow-400 text-black font-semibold w-full py-3 rounded-full hover:bg-yellow-500 hover:scale-105 transition-all duration-300"
+            className="bg-yellow-400 text-black font-semibold w-full py-3 rounded-full hover:bg-yellow-500 hover:scale-105 transition-all duration-300 cursor-pointer"
           >
             Post Task
           </button>
