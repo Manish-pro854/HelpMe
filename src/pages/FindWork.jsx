@@ -3,10 +3,10 @@ import { useJobContext } from "../context/JobContext";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 // 📦 default showcase task images
-import cleaning from "../assets/floor.jpg";
-import dog from "../assets/dog.jpg";
-import grocery from "../assets/grocery.png";
-import event from "../assets/table.jpg";
+import cleaning from "../assets/floor.webp";
+import dog from "../assets/dog.webp";
+import grocery from "../assets/grocery.jpg";
+import event from "../assets/table.webp";
 
 // ---------- static default tasks ----------
 const staticTasks = [

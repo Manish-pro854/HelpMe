@@ -1,5 +1,5 @@
 import React from "react";
-import teamImg from "../assets/team.jpg"; // Add a nice team image here
+import teamImg from "../assets/team.webp"; // Add a nice team image here
 import Team from "../Sections/Team";
 import { NavLink } from "react-router-dom";
 
